@@ -40,18 +40,20 @@ sidebar:
       
       - item: Mysql
         level: 熟练
+      
+      - item: Git
+        level: 熟练
 
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
+      
 
-      Second paragraph if required.
-
+self-evaluation:
+    title: 自我评价
+    summary: |
+      乐于思考，通过自动化脚本解决编程中的体力活。在华为实习期间，通过编写脚本来自动纠正代码中规范问题和解决本地图片一键迁移到云存储的难题，获得同事好评。
+      深究原理，代码逻辑风格清晰。实习项目需求中依赖到其他代码会去快速阅读源码。主管对编写代码质量很高。
 education:
     - degree: 硕士 软件工程
       university: 浙江大学
@@ -75,33 +77,33 @@ experiences:
         实现一个基于共享内存的单节点进程间信息免拷贝传输系统，用于传输、缓存业务数据，减少IO开销。
         - 进程间数据传输零拷贝，保证了数据传输高效性
         - 在读、写进程之外引入管理进程，保证共享内存高可靠性和对外接口易用性
-        负责内容：两项基础通信需求（读写进程注册和读、写、管理进程三方之间通信链路建立）
+        - 负责内容：两项基础通信需求（读写进程注册和读、写、管理进程三方之间通信链路建立）
                 和一项可靠性需求（写进程挂掉后资源回收及重启后资源恢复）。需求代码2.5k，测试代码3.5k，代码均已合入项目主库。
-        项目详情见()[]
+        - 项目简介见()[]
 
     - role: Java后端实习生
       time: 2018.10 - 2018.11
       company: 宁波沙塔科技
       details: |
         工业统计过程控制系统(SPC)的开发。
-        负责内容：参与数据库的设计和后端业务增删查改逻辑代码的编写
+        - 负责内容：参与数据库的设计和后端业务增删查改逻辑代码的编写
 
 projects:
-    title: Projects
+    title: 项目经历
     intro: >
 
     assignments:
-      - title: 
+      - title: 基于共享内存的进程间信息免拷贝传输系统
         link: "#hook"
         tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
-      - title: DevStudio
+      - title: 小型关系数据库minisql
         link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+        tagline: "采用C++实现。支持基础表库创建删除，表增删查改，支持索引，支持简单的事务，支持远程连接"
 
-      - title: Tempo
+      - title: 小型站点搜索引擎
         link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+        tagline: ""
 
       - title: Atom
         link: "#"
