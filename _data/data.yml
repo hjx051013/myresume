@@ -13,6 +13,7 @@ sidebar:
 
     # Sidebar links
     email: 21851111@zju.edu.cn
+    age: 22
     phone: 15700122326
     website: hjx051013.github.io
     linkedin: 
@@ -29,6 +30,18 @@ sidebar:
         level: CET-6 510
 
     other_skills:
+      - item: Java
+        level: 熟练
+
+      - item: C/C++
+        level: 熟练
+
+      - item: Python
+        level: 掌握
+
+      - name: Javascript
+        level: 掌握
+        
       - item: Linux命令及系统编程
         level: 掌握
         
@@ -79,7 +92,6 @@ experiences:
         - 在读、写进程之外引入管理进程，保证共享内存高可靠性和对外接口易用性
         - 负责内容：两项基础通信需求（读写进程注册和读、写、管理进程三方之间通信链路建立）
                 和一项可靠性需求（写进程挂掉后资源回收及重启后资源恢复）。需求代码2.5k，测试代码3.5k，代码均已合入项目主库。
-        - 项目简介见()[]
 
     - role: Java后端实习生
       time: 2018.10 - 2018.11
@@ -94,24 +106,33 @@ projects:
 
     assignments:
       - title: 基于共享内存的进程间信息免拷贝传输系统
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+        link: "#"
+        tagline: |
+          - 读、写进程首先向管理进程注册，然后写进程通过monitor进程与读进程建立双向disruptor通道，
+            接下来写进程向monitor申请共享内存，然后写入传输数据，通过diruptor通道发送传输数据在共享内存中的位置信息，读进程从共享内存中读取传输数据
+          - 可靠性保证。
+            1. 写者挂掉， monitor感知，通知读者回收内存和清理通道，写者重启将重建通道
+            2. 读者挂掉，monitor感知，通知写者回收内存和清理通道，读者重启注册monitor感知到后通知写者重新发起连接
+            3. monitor挂掉，读写进程感知进行定时重连，此时仍能正常通信，但业务降级。monitor重启后通过持久化文件和读写进程上报的控制信息恢复挂掉前的状态。
+               此后读写进程业务恢复。
 
       - title: 小型关系数据库minisql
         link: "#"
-        tagline: "采用C++实现。支持基础表库创建删除，表增删查改，支持索引，支持简单的事务，支持远程连接"
+        tagline: |
+          采用C++实现。支持基础表库创建删除，表增删查改，支持索引，支持简单的事务，实现了简单的服务端和客户端，支持远程连接。
+
+      - title: Java高并发秒杀系统
+        link: "#"
+        tagline: |
+
 
       - title: 小型站点搜索引擎
         link: "#"
-        tagline: ""
-
-      - title: Atom
-        link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+        tagline: |
+          针对浙江大学软件学院的小型搜索引擎，实现了关键词搜索和定期更新功能。分为数据爬取与处理模块和web模块。
+          - 数据爬取与处理。构建了一个基于redis和zookeeper的分布式爬虫系统，通过redis共享待爬的url，通过zookeeper监控是否有节点挂掉。
+            对网页构建倒排索引并计算每个网页pagerank, 存储在mysql中
+          - spring boot 构建网站后台，网页排序结合标题相关度，正文相关度，pagerank 实现多层次高质量的网页排序
 
 publications:
     title: Publications
