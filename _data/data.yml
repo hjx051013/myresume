@@ -29,7 +29,7 @@ sidebar:
         level: CET-6 510
     
     skills:
-      
+
     other_skills:
       - item:
         level:
@@ -49,7 +49,6 @@ career-profile:
       Second paragraph if required.
 
 education:
-    title: 教育经历
     - degree: 硕士 软件工程
       university: 浙江大学
       time: 2018 - 2020
