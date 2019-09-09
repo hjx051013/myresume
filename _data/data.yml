@@ -72,20 +72,26 @@ experiences:
       time: 2019.5 - 2019.8
       company: 华为杭州研究所
       details: |
-        
+        实现一个基于共享内存的单节点进程间信息免拷贝传输系统，用于传输、缓存业务数据，减少IO开销。
+        - 进程间数据传输零拷贝，保证了数据传输高效性
+        - 在读、写进程之外引入管理进程，保证共享内存高可靠性和对外接口易用性
+        负责内容：两项基础通信需求（读写进程注册和读、写、管理进程三方之间通信链路建立）
+                和一项可靠性需求（写进程挂掉后资源回收及重启后资源恢复）。需求代码2.5k，测试代码3.5k，代码均已合入项目主库。
+        项目详情见()[]
 
     - role: Java后端实习生
       time: 2018.10 - 2018.11
       company: 宁波沙塔科技
       details: |
-        
+        工业统计过程控制系统(SPC)的开发。
+        负责内容：参与数据库的设计和后端业务增删查改逻辑代码的编写
 
 projects:
     title: Projects
     intro: >
 
     assignments:
-      - title: Velocity
+      - title: 
         link: "#hook"
         tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
