@@ -13,14 +13,14 @@ sidebar:
 
     # Sidebar links
     email: 21851111@zju.edu.cn
-    age: 22
+    age: 22岁
     phone: 15700122326
     website: http://hjx051013.github.io
-    linkedin: 
+    linkedin:
     github: hjx051013
     gitlab:
     bitbucket:
-    twitter: 
+    twitter:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
@@ -44,29 +44,29 @@ sidebar:
 
       - item: Linux命令及系统编程
         level: 掌握
-        
+
       - item: Spring
         level: 掌握
-      
+
       - item: Redis
         level: 掌握
-      
+
       - item: Mysql
         level: 熟练
-      
+
       - item: Git
         level: 熟练
 
 career-profile:
     title: Career Profile
     summary: |
-      
+
 
 self-evaluation:
     title: 自我评价
     summary: |
       乐于思考，通过自动化脚本解决编程中的体力活。在华为实习期间，通过编写脚本来自动纠正代码中规范问题和解决本地图片一键迁移到云存储的问题，获得同事好评。
-      
+
       深究原理，代码逻辑风格清晰。实习项目需求中依赖到其他代码会去快速阅读源码。主管对编写代码质量评价很高。
 education:
     - degree: 硕士 软件工程
