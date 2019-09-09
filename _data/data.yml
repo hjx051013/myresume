@@ -27,15 +27,19 @@ sidebar:
     languages:
       - idiom: 英语
         level: CET-6 510
-    
-    skills:
 
     other_skills:
-      - item:
-        level:
+      - item: Linux命令及系统编程
+        level: 掌握
         
-      - item:
-        level: 
+      - item: Spring
+        level: 掌握
+      
+      - item: Redis
+        level: 掌握
+      
+      - item: Mysql
+        level: 熟练
 
 career-profile:
     title: Career Profile
@@ -53,27 +57,15 @@ education:
       university: 浙江大学
       time: 2018 - 2020
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-
-          - Bullet point
-          - Bullet point
+        主修课程：Android应用开发技术，机器学习与数据挖掘，分布式系统，区块链技术与应用，人工智能，跨平台移动应用开发技术
+        - GPA(84/100) 前25%
 
     - degree: 本科 材料科学与工程主修 计算机科学辅修
       university: 浙江大学
       time: 2014 - 2018
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-
-          - Bullet point
-          - Bullet point
+        辅修课程：计算机组成原理，操作系统，计算机网络，高级数据结构与算法，数据库系统，Java程序设计
+        - GPA(4.15/5) 前15%，获得学业二、三等奖学金各一次，推免至浙大软件学院攻读研究生
 
 experiences:
     - role: 通用软件开发实习生(C/C++)
