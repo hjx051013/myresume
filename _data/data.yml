@@ -123,11 +123,6 @@ projects:
         tagline: |
           采用C++实现。支持基础表库创建删除，表增删查改，支持索引，支持简单的事务，实现了简单的服务端和客户端，支持远程连接。
 
-      - title: Java高并发秒杀系统
-        link: "#"
-        tagline: |
-
-
       - title: 小型站点搜索引擎
         link: "#"
         tagline: |
