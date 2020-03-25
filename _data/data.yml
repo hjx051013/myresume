@@ -13,7 +13,7 @@ sidebar:
 
     # Sidebar links
     email: 21851111@zju.edu.cn
-    age: 22岁
+    age: 23岁
     phone: 15700122326
     website: http://hjx051013.github.io
     linkedin:
@@ -57,6 +57,9 @@ sidebar:
       - item: Git
         level: 熟练
 
+      - item: Go
+        level: 掌握
+
 career-profile:
     title: Career Profile
     summary: |
@@ -65,9 +68,7 @@ career-profile:
 self-evaluation:
     title: 自我评价
     summary: |
-      乐于思考，通过自动化脚本解决编程中的体力活。在华为实习期间，通过编写脚本来自动纠正代码中规范问题和解决本地图片一键迁移到云存储的问题，获得同事好评。
-
-      深究原理，代码逻辑风格清晰。实习项目需求中依赖到其他代码会去快速阅读源码。主管对编写代码质量评价很高。
+      乐于思考，爱好学习，有好奇心和自驱力
 education:
     - degree: 硕士 软件工程
       university: 浙江大学
@@ -84,6 +85,12 @@ education:
         - GPA(4.15/5) 前15%，获得学业二、三等奖学金各一次，推免至浙大软件学院攻读研究生
 
 experiences:
+    - role: 广告系统后端研发实习生(Go/Python)
+      time: 2019.10 - 2019.12
+      company: 字节跳动上海网盟技术部
+      details: |
+        实时竞价DSP系统的需求开发与维护。
+        - 负责内容：新增ADX流量接入，广告收入+40w/天；ADX流量接入请求解析与打包bug修复，消耗+10%； 等dsp流量接入与优化的需求
     - role: 通用软件开发实习生(C/C++)
       time: 2019.5 - 2019.8
       company: 华为杭州研究所
@@ -93,13 +100,6 @@ experiences:
         - 在读、写进程之外引入管理进程，保证共享内存高可靠性和对外接口易用性
         - 负责内容：两项基础通信需求（读写进程注册和读、写、管理进程三方之间通信链路建立）
                 和一项可靠性需求（写进程挂掉后资源回收及重启后资源恢复）。需求代码2.5k，测试代码3.5k，代码均已合入项目主库。
-
-    - role: Java后端实习生
-      time: 2018.10 - 2018.11
-      company: 宁波沙塔科技
-      details: |
-        Springboot校园微信点餐系统
-        - 负责内容：负责爆款餐品秒杀系统的设计与实现
 
 projects:
     title: 项目经历
@@ -118,11 +118,6 @@ projects:
             3. monitor挂掉，读写进程感知进行定时重连，此时仍能正常通信，但业务降级。monitor重启后通过持久化文件和读写进程上报的控制信息恢复挂掉前的状态。
                此后读写进程业务恢复。
 
-      - title: 小型关系数据库minisql
-        link: "#"
-        tagline: |
-          采用C++实现。支持基础表库创建删除，表增删查改，支持索引，支持简单的事务，实现了简单的服务端和客户端，支持远程连接。
-
       - title: 小型站点搜索引擎
         link: "#"
         tagline: |
@@ -131,25 +126,12 @@ projects:
             对网页构建倒排索引并计算每个网页pagerank, 存储在mysql中
           - spring boot 构建网站后台，网页排序结合标题相关度，正文相关度，pagerank 实现多层次高质量的网页排序
 
-publications:
-    title: Publications
-    intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-
-    papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
-
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: 实时竞价需求方平台(DSP)
+        link: "#"
+        tagline: |
+          字节跳动穿山甲网盟DSP项目。
+          - 实时竞价生态系统中的需求方平台，对接ADX与广告主，经过请求解析、用户信息获取、广告创意定向检索、点击转化率预估、出价排序、创意打包后投出广告
+          - 采用基于Kite框架的微服务架构，复用计费、预估、广告获取、用户数据中心等服务，内部定向环节采用倒排位图索引来筛选和过滤广告，节省了定向时间和内存消耗，提高了单机吞吐量。
 
 skills:
     title: 编程语言
